@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>sweetalert2 examble  </title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
+    <!-- Custom styles for this template -->
+<style>
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+
+  }
+
+  </style>
+  </head>
+
+  <body>
+
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading"><img src="https://sweetalert2.github.io/images/SweetAlert2.png" width="350px"></h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+
+        </div>
+      </section>
+        <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="card mb-4  ">
+                <h3 class="m-2">Basic Alert</h3>
+
+    <div class="row">
+                  <div class="col-md-6">
+                <img  src="../assets/images/basic.png" width="80%" alt="Basic Alert">  </div>
+  <div class="col-md-6">
+                <pre class="m-2">
+  <code>swal('You clicked a button!')</code>
+</pre>     </div>
+</div>           <div class="  align-items-center m-2">
+                      <button type="button" id="basic" class="btn  btn-block btn-outline-secondary">Basic</button>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="card mb-4  ">
+                    <h3 class="m-2">Success Alert</h3>
+
+      <div class="row">
+                  <div class="col-md-6">
+
+                    <img class="card-img-top " src="../assets/images/success.png" width="80%" alt="Basic Alert"> </div>
+      <div class="col-md-6">
+                <pre class="">
+                  <code>swal(
+                    'Success',
+                    'You clicked the <b style="color:green;">Success</b> button!',
+                    'success')</code>
+      </pre>     </div>
+      </div>           <div class="  align-items-center m-2">
+        <button type="button" id="success" class="btn  btn-block btn-outline-secondary">Success</button>
+      </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+      <script src="../assets/js/sweetalert2.all.min.js"></script>
+    <script>
+      $('#basic').click(  function(e) {
+        swal(
+          'You clicked a button!'
+        )
+      });
+      // Alert Modal Type
+  		$('#success').click(  function(e) {
+  			swal(
+  				'Success',
+  				'You clicked the <b style="color:green;">Success</b> button!',
+  				'success'
+  			)
+  		});
+
+      $('#error').click(  function(e) {
+        swal(
+        'Error!',
+        'You clicked the <b style="color:red;">error</b> button!',
+        'error'
+        )
+      });
+      $('#info').click(  function(e) {
+        swal(
+          'Info',
+          'You clicked the <b style="color:blue;">Info</b> button!',
+          'info'
+        )
+      });
+
+      $('#warning').click(  function(e) {
+        swal(
+        'Warning!',
+        'You clicked the <b style="color:orange;">Warning</b> button!',
+        'warning'
+        )
+      });
+
+
+      </script>
+
+  </body>
+</html>
